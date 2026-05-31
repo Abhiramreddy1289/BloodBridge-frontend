@@ -12,6 +12,18 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   @apply bg-[#f8fafc] text-slate-900 antialiased overflow-x-hidden;
   perspective: 2000px;
@@ -236,8 +248,11 @@ select {
   main,
   main > *,
   section,
+  section > *,
   header,
+  header > *,
   footer,
+  footer > *,
   form,
   article,
   nav,
@@ -248,7 +263,9 @@ select {
   .max-w-xl,
   .max-w-md,
   .max-w-sm {
+    width: min(100%, calc(100vw - 1.75rem)) !important;
     max-width: 100% !important;
+    min-width: 0 !important;
   }
 
   footer,
