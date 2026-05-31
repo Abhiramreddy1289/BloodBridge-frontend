@@ -193,13 +193,23 @@ select {
   }
 
   h1 {
-    font-size: clamp(1.85rem, 8.5vw, 2.35rem) !important;
+    font-size: clamp(1.65rem, 7.5vw, 1.95rem) !important;
     line-height: 1.05 !important;
   }
 
   h2 {
-    font-size: clamp(1.45rem, 7vw, 1.95rem) !important;
+    font-size: clamp(1.35rem, 6.5vw, 1.7rem) !important;
     line-height: 1.1 !important;
+  }
+
+  .text-xl {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+
+  .text-lg {
+    font-size: 0.95rem !important;
+    line-height: 1.45rem !important;
   }
 
   p,
