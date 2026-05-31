@@ -205,16 +205,16 @@ select {
   }
 
   h1 {
-    font-size: clamp(1.45rem, 6.2vw, 1.55rem) !important;
-    line-height: 1.05 !important;
+    font-size: clamp(1.2rem, 5.3vw, 1.35rem) !important;
+    line-height: 1.12 !important;
     max-width: 100% !important;
     overflow-wrap: anywhere;
     word-break: break-word;
   }
 
   h2 {
-    font-size: clamp(1.25rem, 5.8vw, 1.45rem) !important;
-    line-height: 1.1 !important;
+    font-size: clamp(1.12rem, 5vw, 1.3rem) !important;
+    line-height: 1.14 !important;
     max-width: 100% !important;
     overflow-wrap: anywhere;
     word-break: break-word;
