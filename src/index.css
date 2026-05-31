@@ -1,0 +1,219 @@
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#f8fafc] text-slate-900 antialiased overflow-x-hidden;
+  perspective: 2000px;
+  background-image:
+    linear-gradient(90deg, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+    linear-gradient(rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+button,
+input,
+textarea,
+select {
+  @apply outline-none transition-all duration-300;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  @apply bg-white/70 backdrop-blur-xl border border-white/40;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.glass-dark {
+  @apply bg-slate-900/80 backdrop-blur-xl border border-slate-700/50;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+.glass-red {
+  @apply bg-red-600/90 backdrop-blur-xl border border-red-400/30 text-white;
+  box-shadow: 0 8px 32px 0 rgba(204, 17, 34, 0.2);
+}
+
+/* Depth & Shadows */
+.shadow-premium {
+  box-shadow: 
+    0 2px 4px rgba(0,0,0,0.02),
+    0 10px 20px rgba(0,0,0,0.04),
+    0 20px 40px rgba(0,0,0,0.06);
+}
+
+.shadow-3d {
+  box-shadow: 
+    0 1px 1px rgba(0,0,0,0.05), 
+    0 2px 2px rgba(0,0,0,0.05), 
+    0 4px 4px rgba(0,0,0,0.05), 
+    0 8px 8px rgba(0,0,0,0.05),
+    0 16px 16px rgba(0,0,0,0.05);
+}
+
+/* Backgrounds */
+.bg-grid {
+  background-size: 60px 60px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px);
+}
+
+.mesh-bg {
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(204, 17, 34, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(51, 65, 85, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(204, 17, 34, 0.05) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(51, 65, 85, 0.05) 0px, transparent 50%);
+}
+
+/* Components */
+.premium-panel {
+  @apply rounded-lg border border-white/70 bg-white/85 p-7 backdrop-blur-xl transition-all duration-500;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.premium-panel:hover {
+  @apply border-red-100;
+  box-shadow:
+    0 2px 4px rgba(0,0,0,0.02),
+    0 10px 20px rgba(0,0,0,0.04),
+    0 20px 40px rgba(0,0,0,0.06);
+  transform: translateY(-6px);
+}
+
+.section-kicker {
+  @apply text-xs font-black uppercase tracking-[0.24em] text-red-600;
+}
+
+.typewriter-title span {
+  display: inline;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 0.08em;
+  height: 0.9em;
+  margin-left: 0.08em;
+  background: #cc1122;
+  vertical-align: -0.06em;
+  animation: typewriter-caret 0.75s step-end infinite;
+}
+
+.metric-strip {
+  @apply grid gap-5 rounded-lg border border-white/80 bg-white/65 p-3 backdrop-blur-xl md:grid-cols-3;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.hero-image-frame {
+  @apply absolute inset-0 overflow-hidden rounded-lg border border-white/15 bg-white/10 shadow-2xl shadow-black/30;
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.hero-image-frame::after {
+  content: '';
+  @apply absolute inset-0;
+  background:
+    linear-gradient(90deg, rgba(15, 23, 42, 0.46), transparent 38%),
+    linear-gradient(180deg, transparent 60%, rgba(15, 23, 42, 0.28));
+}
+
+.floating-card {
+  @apply absolute z-10 rounded-lg border border-white/80 bg-white/90 px-5 py-4 shadow-2xl shadow-slate-950/20 backdrop-blur-xl;
+  animation: float-card 5.5s ease-in-out infinite;
+}
+
+.floating-card:nth-of-type(3) {
+  animation-delay: 0.8s;
+}
+
+.floating-card:nth-of-type(4) {
+  animation-delay: 1.4s;
+}
+
+.card-premium {
+  @apply rounded-lg border border-white/70 bg-white/80 p-8 backdrop-blur-xl transition-all duration-500 ease-out;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  transform-style: preserve-3d;
+}
+
+.card-premium:hover {
+  @apply border-red-500/20;
+  box-shadow:
+    0 2px 4px rgba(0,0,0,0.02),
+    0 10px 20px rgba(0,0,0,0.04),
+    0 20px 40px rgba(0,0,0,0.06);
+  transform: translateY(-6px);
+}
+
+.btn-press {
+  @apply active:scale-95 transition-transform;
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+
+@keyframes float-card {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes typewriter-caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .typing-cursor {
+    animation: none;
+  }
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+/* Marker fix for Leaflet in React */
+.leaflet-default-icon-path {
+  background-image: url(https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-slate-200 border-4 border-transparent bg-clip-content hover:bg-red-400 transition-colors;
+}
