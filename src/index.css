@@ -188,6 +188,128 @@ select {
 }
 
 @media (max-width: 640px) {
+  body {
+    background-size: 34px 34px;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 10vw, 3rem) !important;
+    line-height: 1.05 !important;
+  }
+
+  h2 {
+    font-size: clamp(1.55rem, 8vw, 2.25rem) !important;
+    line-height: 1.1 !important;
+  }
+
+  p,
+  li,
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    overflow-wrap: anywhere;
+  }
+
+  main {
+    padding-left: 0.875rem !important;
+    padding-right: 0.875rem !important;
+  }
+
+  .card-premium,
+  .premium-panel {
+    border-radius: 1.35rem !important;
+    padding: 1.15rem !important;
+    transform: none !important;
+  }
+
+  .card-premium:hover,
+  .premium-panel:hover {
+    transform: none !important;
+  }
+
+  .shadow-soft,
+  .shadow-premium {
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08) !important;
+  }
+
+  .rounded-\[2\.5rem\],
+  .rounded-\[3rem\] {
+    border-radius: 1.4rem !important;
+  }
+
+  .p-8,
+  .p-10,
+  .p-12,
+  .lg\:p-16 {
+    padding: 1.15rem !important;
+  }
+
+  .\!p-10,
+  .\!p-12 {
+    padding: 1.15rem !important;
+  }
+
+  .gap-12,
+  .gap-10,
+  .space-y-16 > :not([hidden]) ~ :not([hidden]),
+  .space-y-12 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 2rem !important;
+  }
+
+  .min-w-\[320px\] {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .tracking-\[0\.2em\],
+  .tracking-\[0\.24em\],
+  .tracking-\[0\.3em\] {
+    letter-spacing: 0.08em !important;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .sm\:grid-cols-2,
+  .md\:grid-cols-2,
+  .lg\:grid-cols-2,
+  .lg\:grid-cols-3,
+  .lg\:grid-cols-4 {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .h-\[560px\],
+  .h-\[600px\],
+  .h-\[620px\] {
+    height: min(70vh, 430px) !important;
+  }
+
+  .max-h-\[560px\] {
+    max-height: none !important;
+  }
+
+  .leaflet-container {
+    border-radius: 1.25rem;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  button,
+  .btn-press,
+  a.rounded-full,
+  a.rounded-2xl,
+  a.rounded-3xl {
+    max-width: 100%;
+  }
+
   .typing-cursor {
     animation: none;
   }
