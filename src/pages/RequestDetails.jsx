@@ -125,7 +125,7 @@ function RequestDetails() {
   return (
     <div className="mx-auto max-w-4xl space-y-8 pb-16">
       <Link to="/dashboard" className="text-sm font-bold text-slate-500 hover:text-red-600 flex items-center gap-2">
-        ← Back to Dashboard
+        Back to Dashboard
       </Link>
 
       <div className="card-premium relative overflow-hidden border border-slate-100 shadow-premium">
@@ -200,7 +200,7 @@ function RequestDetails() {
               <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest">Contact Details</h3>
               {request.status === 'pending' && !isOwner && !isAdmin ? (
                 <p className="mt-2 text-sm text-slate-500 leading-relaxed">
-                  🔒 Locked. Contact details are shared automatically after you accept this SOS.
+                  Locked. Contact details are shared automatically after you accept this SOS.
                 </p>
               ) : (
                 <p className="mt-1 text-xl font-bold text-slate-900">{request.contactNumber}</p>
@@ -231,7 +231,7 @@ function RequestDetails() {
               
               {!isCompatible && (
                 <div className="rounded-2xl bg-amber-50 border border-amber-100 p-4 text-amber-800 text-sm font-semibold">
-                  ⚠️ Blood type mismatch. The patient needs <strong>{request.bloodGroup}</strong>, and you are registered as <strong>{user?.bloodGroup}</strong>. Only accept if medically compatible or instructed by a doctor.
+                  Blood type mismatch. The patient needs <strong>{request.bloodGroup}</strong>, and you are registered as <strong>{user?.bloodGroup}</strong>. Only accept if medically compatible or instructed by a doctor.
                 </div>
               )}
 
