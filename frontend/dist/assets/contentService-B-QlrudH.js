@@ -1,1 +1,0 @@
-import{a as t}from"./index-CCjnodAv.js";const a=async()=>(await t.get("/camps")).data,n=async s=>(await t.post("/camps",s)).data,o=async s=>(await t.put(`/camps/${s}/approve`)).data,r=async()=>(await t.get("/stories")).data,p=async s=>(await t.post("/stories",{quote:s})).data,i={getCamps:a,createCamp:n,approveCamp:o,getStories:r,createStory:p};export{i as c};

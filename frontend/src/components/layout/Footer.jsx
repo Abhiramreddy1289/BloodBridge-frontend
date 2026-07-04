@@ -72,26 +72,26 @@ function Footer() {
               <h4 className="mb-5 text-xs font-black uppercase tracking-[0.24em] text-red-300">Contact</h4>
               <ul className="space-y-3 text-sm font-semibold text-slate-300">
                 <li>
-                  <a href="tel:+91180025663" className="flex items-center gap-3 transition-colors hover:text-white">
+                  <a href="tel:+919059397717" className="flex items-center gap-3 transition-colors hover:text-white">
                     <span className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/10 text-red-300">
                       <Phone size={16} />
                     </span>
-                    +91 1800-BLOOD
+                    +91 9059397717
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:sos@bloodbridge.in" className="flex items-center gap-3 transition-colors hover:text-white">
+                  <a href="mailto:bloodbridgeappln@gmail.com" className="flex items-center gap-3 transition-colors hover:text-white">
                     <span className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/10 text-red-300">
                       <Mail size={16} />
                     </span>
-                    sos@bloodbridge.in
+                    bloodbridgeappln@gmail.com
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/10 text-red-300">
                     <MapPin size={16} />
                   </span>
-                  New Delhi, India
+                  Hyderabad, India
                 </li>
               </ul>
             </div>

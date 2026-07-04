@@ -1,1 +1,0 @@
-import{e as n}from"./index-CCjnodAv.js";import{u as o}from"./TileLayer-CFDhzRGc.js";function a(){return o().map}function p(e){const t=a();return n.useEffect(function(){return t.on(e),function(){t.off(e)}},[t,e]),t}export{p as a,a as u};
