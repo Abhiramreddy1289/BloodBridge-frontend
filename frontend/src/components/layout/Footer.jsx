@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import BrandLogo from './BrandLogo';
 
 const socialLinks = [
-  { icon: Send, href: 'mailto:sos@bloodbridge.in', label: 'Email support' },
+  { icon: Send, href: 'mailto:bloodbridgeappln@gmail.com', label: 'Email support' },
   { icon: Globe, href: 'https://bloodbridge-with-abhiram.vercel.app/', label: 'Open BloodBridge site' },
   { icon: LinkIcon, href: 'https://github.com/Abhiramreddy1289/BloodBridge-frontend', label: 'View source repository' },
 ];
@@ -71,26 +71,26 @@ function Footer() {
             <h4 className="mb-6 text-xs font-black uppercase tracking-widest text-slate-900">Contact</h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+91180025663" className="flex items-center gap-3 font-bold text-slate-500 transition-colors hover:text-red-600">
+                <a href="tel:+919059397717" className="flex items-center gap-3 font-bold text-slate-500 transition-colors hover:text-red-600">
                   <span className="flex h-8 w-8 items-center justify-center rounded-lg glass text-red-600">
                     <Phone size={16} />
                   </span>
-                  +91 1800-BLOOD
+                  +91 9059397717
                 </a>
               </li>
               <li>
-                <a href="mailto:sos@bloodbridge.in" className="flex items-center gap-3 font-bold text-slate-500 transition-colors hover:text-red-600">
+                <a href="mailto:bloodbridgeappln@gmail.com" className="flex items-center gap-3 font-bold text-slate-500 transition-colors hover:text-red-600">
                   <span className="flex h-8 w-8 items-center justify-center rounded-lg glass text-red-600">
                     <Mail size={16} />
                   </span>
-                  sos@bloodbridge.in
+                  bloodbridgeappln@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-3 font-bold text-slate-500">
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg glass text-red-600">
                   <MapPin size={16} />
                 </span>
-                New Delhi, India
+                Hyderabad, India
               </li>
             </ul>
           </div>
